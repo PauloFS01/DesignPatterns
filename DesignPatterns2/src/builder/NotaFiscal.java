@@ -29,5 +29,30 @@ public class NotaFiscal {
 		return valorBruto;
 	}
 
+	public String getRazaoSocial() {
+		return razaoSocial;
+	}
+
+	public String getCNPJ() {
+		return CNPJ;
+	}
+
+	public double getImpostos() {
+		return impostos;
+	}
+
+	public Calendar getDataDeEmissao() {
+		return dataDeEmissao;
+	}
+
+	public String getObservaçoes() {
+		return observaçoes;
+	}
+
+	public List<ItemNota> getItens() {
+		return itens;
+	}
+	
+	
 	
 }
