@@ -4,8 +4,8 @@ public class Moderado implements Estrategia{
 
 	@Override
 	public double retornaInvestimento(double valor) {
-		//(Expressão) ? ValorTrue : ValorFalse
 		return (verificaRetorno())?2.5:0.7;
+		
 	}
 	
 	private boolean verificaRetorno() {

@@ -1,5 +1,7 @@
 package state;
 
+import strategy_2.Conta;
+
 public class TestaContas {
 	public static void main(String[] args) {
 		
@@ -10,11 +12,9 @@ public class TestaContas {
 		System.out.println(conta.getSaldo());
 		
 		/*		  
-		 * 
 		conta.estado.saca(conta, 1);
-		System.out.println(conta.getSaldo());  // lança uma RuntimeExeption 
-		
-		 */
+		System.out.println(conta.getSaldo());  // lança uma RuntimeExeption 		
+		*/
 		
 		conta.deposita(100);
 		System.out.println(conta.getSaldo());

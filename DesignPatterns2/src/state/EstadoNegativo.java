@@ -1,13 +1,15 @@
 package state;
 
+import strategy_2.Conta;
+
 public class EstadoNegativo implements EstadoConta {
 
 	@Override
 	public void mudaEstado(Conta conta) {
-		if(conta.saldo <= 0) {
-			conta.estado = new EstadoNegativo();
+		if(conta.getSaldo() <= 0) {
+			conta.setEstado(new EstadoNegativo());
 		}else {
-			conta.estado =  new EstadoPositivo();
+			conta.setEstado(new EstadoPositivo());
 		}
 
 	}
@@ -20,7 +22,7 @@ public class EstadoNegativo implements EstadoConta {
 
 	@Override
 	public void deposita(Conta conta, double valor) {
-		conta.saldo = valor -= valor * 0.05;
+		conta.setSaldo(valor -= valor * 0.05);
 		mudaEstado(conta);
 
 	}

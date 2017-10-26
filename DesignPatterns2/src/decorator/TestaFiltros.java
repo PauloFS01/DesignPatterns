@@ -34,7 +34,7 @@ public class TestaFiltros {
 		
 		Conta conta = new Conta(300);
 
-		Conta conta2 = new Conta(600000);
+		Conta conta2 = new Conta(600);
 
 		Conta conta3 = new Conta(90);
 

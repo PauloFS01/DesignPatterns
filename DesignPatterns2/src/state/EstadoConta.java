@@ -1,5 +1,7 @@
 package state;
 
+import strategy_2.Conta;
+
 public interface EstadoConta {
 	
 	public void mudaEstado(Conta conta);

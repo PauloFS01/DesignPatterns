@@ -19,20 +19,25 @@ public class Pedido {
 	public Calendar getDataFinalizacao() {
 		return dataFinalizacao;
 	}
-	public void setCliente(String cliente) {
+	public Pedido setCliente(String cliente) {
 		this.cliente = cliente;
+		return this;
 	}
-	public void setValor(double valor) {
+	public Pedido setValor(double valor) {
 		this.valor = valor;
+		return this;
 	}
 	
 	
 	public void paga() {
 		this.status = Status.PAGO;
+		System.out.println(this.status);
 	}
 	
 	public void finaliza() {
 		this.status = Status.ENTREGUE;
+		this.dataFinalizacao = Calendar.getInstance();
+		System.out.println(this.status);
 		
 	}
 

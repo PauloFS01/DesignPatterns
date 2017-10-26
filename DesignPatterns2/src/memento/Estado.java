@@ -6,6 +6,15 @@ public class Estado {
 	public Estado(Contrato contrato){
 		this.contrato = contrato;
 	}
+	 
+	public Estado(){
+
+	}
+	
+	public void setContrato(Contrato contrato) {
+		this.contrato = contrato;
+	}
+
 
 	public Contrato getContrato() {
 		return contrato;

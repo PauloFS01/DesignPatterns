@@ -12,9 +12,7 @@ public class FiltroMenorDe500 extends Filtro{
 
 	@Override
 	public boolean meuFiltro(double valor) {
-		
-		return (valor < 500000)?true:false;
-		
+		return (valor < 500)?true:false;		
 	}
 
 }
